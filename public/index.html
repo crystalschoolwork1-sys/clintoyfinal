@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Inventory Dashboard</h1>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h2 id="totalItems">0</h2>
+            <p>Total Items</p>
+        </div>
+
+        <div class="card">
+            <h2 id="totalQuantity">0</h2>
+            <p>Total Quantity</p>
+        </div>
+
+        <div class="card">
+            <h2 id="totalValue">0</h2>
+            <p>Total Value (₱)</p>
+        </div>
+
+    </div>
+
+
+    <form id="form">
+
+        <input type="hidden" id="id">
+
+        <input id="name" placeholder="Item name" required>
+
+        <input id="quantity" type="number" placeholder="Quantity" required>
+
+        <input id="price" type="number" step="0.01" placeholder="Price" required>
+
+        <button type="submit" id="saveBtn">Add Item</button>
+
+    </form>
+
+
+    <div id="content"></div>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
